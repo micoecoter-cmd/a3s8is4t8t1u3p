@@ -140,7 +140,7 @@ export default function EditCotizacionPage() {
                   className={`flex items-center gap-2 bg-[#8cc63f] text-white px-6 py-3 rounded-lg font-bold hover:bg-[#7ab135] transition-colors shadow w-full sm:w-auto justify-center ${isSubmitting ? 'opacity-70 cursor-not-allowed' : ''}`}
                 >
                   <i className={`fas ${isSubmitting ? 'fa-spinner fa-spin' : 'fa-save'}`}></i>
-                  {isSubmitting ? 'Actualizando...' : 'Guardar Cambios (Nube)'}
+                  {isSubmitting ? 'Actualizando...' : 'Guardar Cambios'}
                 </button>
               </div>
             </div>

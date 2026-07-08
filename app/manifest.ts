@@ -7,7 +7,7 @@ export default function manifest(): MetadataRoute.Manifest {
     description: 'Sistema de Reportes y Cotizaciones Asisttup',
     start_url: '/',
     display: 'standalone',
-    background_color: '#f8fafc',
+    background_color: '#020617',
     theme_color: '#004d99',
     icons: [
       {

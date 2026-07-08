@@ -139,7 +139,7 @@ export default function EditReportPage() {
                   className={`flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-white shadow-md hover:-translate-y-1 transition-all w-full sm:w-auto justify-center ${isSubmitting ? 'opacity-70 cursor-not-allowed' : ''}`}
                   style={{ backgroundColor: BRAND.green }}
                 >
-                  {isSubmitting ? 'Actualizando...' : 'Guardar Cambios (Nube)'}
+                  {isSubmitting ? 'Actualizando...' : 'Guardar Cambios'}
                 </button>
               </div>
 

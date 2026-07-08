@@ -25,7 +25,7 @@ export default async function Home() {
         <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-4">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/asisttup-logo.svg" alt="Ecotermic Logo" className="h-10 w-auto object-contain" />
+            <img src="/asisttup-logo.svg" alt="Ecotermic Logo" className="h-7 md:h-10 w-auto object-contain" />
           </div>
           <div className="text-sm font-bold text-slate-800 uppercase tracking-widest hidden md:block">
             Rol: <span className="text-[#2bb8e4]">{role}</span>
