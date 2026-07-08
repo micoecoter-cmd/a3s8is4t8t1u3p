@@ -129,7 +129,7 @@ export default function ReportesPage() {
   return (
     <FormProvider {...methods}>
       <form onSubmit={(e) => e.preventDefault()}>
-        <div className="min-h-screen bg-slate-50 font-sans text-slate-800 selection:bg-[#2bb6b1] selection:text-white print:min-h-0 print:bg-white">
+        <div className="min-h-screen bg-slate-50 font-sans text-slate-800 selection:bg-[#2bb8e4] selection:text-white print:min-h-0 print:bg-white">
         
         {/* Barra Superior */}
         <ReportHeader />

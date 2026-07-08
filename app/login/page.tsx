@@ -9,13 +9,13 @@ export default async function LoginPage({
   const error = resolvedParams?.error as string | undefined;
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-slate-50 p-4 selection:bg-[#2bb6b1] selection:text-white">
+    <div className="min-h-screen flex items-center justify-center bg-slate-50 p-4 selection:bg-[#2bb8e4] selection:text-white">
       <div className="bg-white p-8 rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100 max-w-md w-full">
         <div className="flex justify-center mb-6">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/ecologo.svg" alt="Asisttup Logo" className="h-16 w-auto object-contain" />
+          <img src="/asisttup-logo.svg" alt="Asisttup Logo" className="h-16 w-auto object-contain" />
         </div>
-        <h2 className="text-2xl font-black text-center text-[#175ca8] tracking-tight mb-8">Iniciar Sesión</h2>
+        <h2 className="text-2xl font-black text-center text-[#004d99] tracking-tight mb-8">Iniciar Sesión</h2>
 
         <form className="space-y-5">
           <div>
@@ -28,7 +28,7 @@ export default async function LoginPage({
               type="email"
               required
               className="w-full p-3 bg-slate-50 border-2 border-slate-100 rounded-xl text-sm focus:ring-4 outline-none transition-all focus:bg-white text-slate-700"
-              style={{ '--tw-ring-color': '#2bb6b122' } as any}
+              style={{ '--tw-ring-color': '#2bb8e422' } as any}
               placeholder="usuario@asisttup.com"
             />
           </div>
@@ -42,7 +42,7 @@ export default async function LoginPage({
               type="password"
               required
               className="w-full p-3 bg-slate-50 border-2 border-slate-100 rounded-xl text-sm focus:ring-4 outline-none transition-all focus:bg-white text-slate-700"
-              style={{ '--tw-ring-color': '#2bb6b122' } as any}
+              style={{ '--tw-ring-color': '#2bb8e422' } as any}
               placeholder="••••••••"
             />
           </div>
@@ -56,7 +56,7 @@ export default async function LoginPage({
           <button
             formAction={login}
             className="w-full flex items-center justify-center gap-2 text-white px-8 py-4 rounded-xl font-bold text-base shadow-lg hover:-translate-y-1 transition-all"
-            style={{ backgroundColor: '#175ca8' }}
+            style={{ backgroundColor: '#004d99' }}
           >
             Iniciar Sesión
           </button>

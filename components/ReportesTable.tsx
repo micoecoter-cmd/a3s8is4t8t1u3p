@@ -55,7 +55,7 @@ export default function ReportesTable({ reportes }: ReportesTableProps) {
           placeholder="Buscar por folio o cliente..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          className="w-full md:w-1/2 p-2 border border-slate-300 rounded focus:outline-none focus:ring-2 focus:ring-[#2bb6b1]"
+          className="w-full md:w-1/2 p-2 border border-slate-300 rounded focus:outline-none focus:ring-2 focus:ring-[#2bb8e4]"
         />
       </div>
 
@@ -86,7 +86,7 @@ export default function ReportesTable({ reportes }: ReportesTableProps) {
                     <div className="flex items-center justify-center gap-2 opacity-80 group-hover:opacity-100 transition-opacity">
                       <Link
                         href={`/reportes/edit/${rep.id}`}
-                        className="inline-block px-4 py-2 bg-[#2bb6b1] text-white text-xs font-bold rounded shadow-sm hover:bg-[#239c98] transition-colors"
+                        className="inline-block px-4 py-2 bg-[#2bb8e4] text-white text-xs font-bold rounded shadow-sm hover:bg-[#239c98] transition-colors"
                       >
                         Editar
                       </Link>

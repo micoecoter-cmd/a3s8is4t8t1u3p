@@ -12,7 +12,7 @@ export default async function CotizacionesListPage() {
       <main className="max-w-6xl mx-auto space-y-6">
         <div className="flex justify-between items-center bg-white p-6 rounded-xl shadow-sm border border-slate-200">
           <div>
-            <h1 className="text-2xl font-black text-[#175ca8]">Base de Datos de Cotizaciones</h1>
+            <h1 className="text-2xl font-black text-[#004d99]">Base de Datos de Cotizaciones</h1>
             <p className="text-sm text-slate-500 mt-1">
               Tu rol actual es: <span className="font-bold text-slate-700 uppercase">{role || 'No autenticado'}</span>
             </p>
@@ -29,7 +29,7 @@ export default async function CotizacionesListPage() {
             {role !== 'reportero' && (
               <Link 
                 href="/cotizaciones"
-                className="px-6 py-2 bg-[#2bb6b1] text-white font-bold rounded shadow hover:-translate-y-0.5 transition-all text-sm"
+                className="px-6 py-2 bg-[#2bb8e4] text-white font-bold rounded shadow hover:-translate-y-0.5 transition-all text-sm"
               >
                 Nueva Cotización
               </Link>

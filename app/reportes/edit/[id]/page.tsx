@@ -83,7 +83,7 @@ export default function EditReportPage() {
   if (isLoading) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-slate-50">
-        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#2bb6b1]"></div>
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#2bb8e4]"></div>
       </div>
     );
   }
@@ -91,7 +91,7 @@ export default function EditReportPage() {
   return (
     <FormProvider {...methods}>
       <form onSubmit={(e) => e.preventDefault()}>
-        <div className="min-h-screen bg-slate-50 font-sans text-slate-800 selection:bg-[#2bb6b1] selection:text-white print:min-h-0 print:bg-white">
+        <div className="min-h-screen bg-slate-50 font-sans text-slate-800 selection:bg-[#2bb8e4] selection:text-white print:min-h-0 print:bg-white">
         
         {/* Barra Superior */}
         <ReportHeader />

@@ -14,7 +14,7 @@ export function GlobalNav({ isAuthenticated }: { isAuthenticated: boolean }) {
 
   const isHome = pathname === '/';
 
-  const navItemClass = "flex flex-col items-center justify-center p-2 text-slate-500 hover:text-[#175ca8] transition-colors w-20";
+  const navItemClass = "flex flex-col items-center justify-center p-2 text-slate-500 hover:text-[#004d99] transition-colors w-20";
   const iconClass = "mb-1";
 
   return (

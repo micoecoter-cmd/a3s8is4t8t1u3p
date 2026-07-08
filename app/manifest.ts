@@ -8,15 +8,15 @@ export default function manifest(): MetadataRoute.Manifest {
     start_url: '/',
     display: 'standalone',
     background_color: '#f8fafc',
-    theme_color: '#175ca8',
+    theme_color: '#004d99',
     icons: [
       {
-        src: '/ecologo.svg',
+        src: '/asisttup-logo.svg',
         sizes: '192x192',
         type: 'image/svg+xml',
       },
       {
-        src: '/ecologo.svg',
+        src: '/asisttup-logo.svg',
         sizes: '512x512',
         type: 'image/svg+xml',
       },

@@ -1,7 +1,7 @@
 export const BRAND = {
   green: '#8cc63f',
-  teal: '#2bb6b1',
-  blue: '#175ca8'
+  teal: '#2bb8e4',
+  blue: '#004d99'
 };
 
 export const COMPANY_DATA = {

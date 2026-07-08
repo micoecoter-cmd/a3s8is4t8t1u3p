@@ -34,7 +34,7 @@ export function CotizacionPrintView() {
       <div className="flex justify-between items-start border-b-2 border-slate-800 pb-4 mb-5">
         <div className="w-1/3">
            {/* eslint-disable-next-line @next/next/no-img-element */}
-           <img src="/ecologo.svg" alt="Ecotermic Logo" className="h-16 object-contain" />
+           <img src="/asisttup-logo.svg" alt="Ecotermic Logo" className="h-16 object-contain" />
         </div>
         <div className="w-2/3 text-right">
           <h1 className="text-3xl font-black text-slate-800 uppercase tracking-widest">Cotización</h1>

@@ -28,7 +28,7 @@ export function CotizacionGeneralInfo({ folio, fecha, onFechaChange }: { folio: 
             />
           </div>
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/ecologo.svg" alt="Ecotermic Logo" className="h-12 w-auto object-contain" />
+          <img src="/asisttup-logo.svg" alt="Ecotermic Logo" className="h-12 w-auto object-contain" />
         </div>
       </div>
 

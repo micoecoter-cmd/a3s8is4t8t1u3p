@@ -9,8 +9,8 @@ export default async function Home() {
 
   const BRAND = {
     green: '#8cc63f',
-    teal: '#2bb6b1',
-    blue: '#175ca8'
+    teal: '#2bb8e4',
+    blue: '#004d99'
   };
 
   return (
@@ -25,10 +25,10 @@ export default async function Home() {
         <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-4">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/ecologo.svg" alt="Ecotermic Logo" className="h-10 w-auto object-contain" />
+            <img src="/asisttup-logo.svg" alt="Ecotermic Logo" className="h-10 w-auto object-contain" />
           </div>
           <div className="text-sm font-bold text-slate-500 uppercase tracking-widest hidden md:block">
-            Rol: <span className="text-[#2bb6b1]">{role}</span>
+            Rol: <span className="text-[#2bb8e4]">{role}</span>
           </div>
         </div>
       </header>
@@ -82,7 +82,7 @@ export default async function Home() {
 
             {/* MÓDULO DE REPORTES (Visible para todos) */}
             <div className="bg-white rounded-3xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100 relative overflow-hidden flex flex-col">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#2bb6b1]/10 to-transparent rounded-bl-full -z-10"></div>
+              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#2bb8e4]/10 to-transparent rounded-bl-full -z-10"></div>
               
               <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6" style={{ backgroundColor: `${BRAND.teal}15`, color: BRAND.teal }}>
                 <FileText size={32} strokeWidth={2.5} />

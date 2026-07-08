@@ -28,7 +28,7 @@ export function PrintView() {
       <div className="flex justify-between items-start mb-6 border-b-[3px] pb-4" style={{ borderColor: BRAND.blue }}>
         <div className="flex flex-col justify-start w-1/2">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/ecologo.svg" alt="Ecotermic" className="h-14 w-auto object-contain object-left mb-3" />
+          <img src="/asisttup-logo.svg" alt="Ecotermic" className="h-14 w-auto object-contain object-left mb-3" />
           <h1 className="text-[20px] font-black uppercase tracking-wider mb-1" style={{ color: BRAND.blue }}>Reporte de Actividades</h1>
           <p className="text-[14px] font-bold" style={{ color: BRAND.blue }}>Fecha: <span className="text-gray-900">{formattedDate}</span></p>
           <p className="text-[12px] font-bold text-gray-500 mt-1">Folio (Borrador local): <span className="font-mono">{id}</span></p>
