@@ -9,9 +9,9 @@ export default async function ReportesListPage() {
   const role = await getUserRole();
 
   return (
-    <div className="p-4 md:p-8 min-h-screen bg-gray-100 text-slate-100 font-sans">
+    <div className="p-4 md:p-8 min-h-screen bg-slate-950 text-slate-100 font-sans">
       <div className="max-w-6xl mx-auto space-y-6">
-        <div className="flex justify-between items-center bg-slate-900 p-6 rounded-xl shadow-sm border border-slate-800">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 bg-slate-900 p-6 rounded-xl shadow-sm border border-slate-800">
           <div>
             <h1 className="text-2xl font-black text-[#2bb8e4]">Base de Datos de Reportes</h1>
             <p className="text-sm text-slate-500 mt-1">

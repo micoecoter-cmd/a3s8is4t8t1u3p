@@ -73,7 +73,7 @@ export default async function Home() {
                   <Link href="/cotizaciones" className="w-full text-center py-3 rounded-xl font-bold text-white shadow-md hover:-translate-y-0.5 transition-transform" style={{ backgroundColor: BRAND.green }}>
                     Nueva Cotización
                   </Link>
-                  <Link href="/cotizaciones/list" className="w-full text-center py-3 rounded-xl font-bold text-slate-200 bg-slate-900 hover:bg-slate-200 hover:text-slate-900 hover:-translate-y-0.5 transition-transform">
+                  <Link href="/cotizaciones/list" className="w-full text-center py-3 rounded-xl font-bold text-slate-200 bg-slate-900 border border-slate-700 hover:bg-slate-200 hover:text-slate-900 hover:-translate-y-0.5 transition-transform">
                     Base de Datos
                   </Link>
                 </div>
@@ -100,7 +100,7 @@ export default async function Home() {
                 <Link href="/reportes" className="w-full text-center py-3 rounded-xl font-bold text-white shadow-md hover:-translate-y-0.5 transition-transform" style={{ backgroundColor: BRAND.teal }}>
                   Nuevo Reporte
                 </Link>
-                <Link href="/reportes/list" className="w-full text-center py-3 rounded-xl font-bold text-slate-200 bg-slate-900 hover:bg-slate-200 hover:text-slate-900 hover:-translate-y-0.5 transition-transform">
+                <Link href="/reportes/list" className="w-full text-center py-3 rounded-xl font-bold text-slate-200 bg-slate-900 border border-slate-700 hover:bg-slate-200 hover:text-slate-900 hover:-translate-y-0.5 transition-transform">
                   Base de Datos
                 </Link>
               </div>
