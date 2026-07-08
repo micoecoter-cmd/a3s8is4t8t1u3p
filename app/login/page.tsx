@@ -10,7 +10,7 @@ export default async function LoginPage({
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-slate-950 p-4 selection:bg-[#2bb8e4] selection:text-white">
-      <div className="bg-slate-900 p-8 rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-800 max-w-md w-full">
+      <div className="bg-white p-8 rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-200 max-w-md w-full">
         <div className="flex justify-center mb-6">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/asisttup-logo.svg" alt="Asisttup Logo" className="h-16 w-auto object-contain" />
@@ -27,7 +27,7 @@ export default async function LoginPage({
               name="email"
               type="email"
               required
-              className="w-full p-3 bg-slate-950 border-2 border-slate-800 rounded-xl text-sm focus:ring-4 outline-none transition-all focus:bg-slate-900 text-slate-200"
+              className="w-full p-3 bg-white border-2 border-slate-200 rounded-xl text-sm focus:ring-4 outline-none transition-all focus:bg-slate-50 text-slate-900"
               style={{ '--tw-ring-color': '#2bb8e422' } as any}
               placeholder="usuario@asisttup.com"
             />
@@ -41,7 +41,7 @@ export default async function LoginPage({
               name="password"
               type="password"
               required
-              className="w-full p-3 bg-slate-950 border-2 border-slate-800 rounded-xl text-sm focus:ring-4 outline-none transition-all focus:bg-slate-900 text-slate-200"
+              className="w-full p-3 bg-white border-2 border-slate-200 rounded-xl text-sm focus:ring-4 outline-none transition-all focus:bg-slate-50 text-slate-900"
               style={{ '--tw-ring-color': '#2bb8e422' } as any}
               placeholder="••••••••"
             />
