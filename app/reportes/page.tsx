@@ -129,7 +129,7 @@ export default function ReportesPage() {
   return (
     <FormProvider {...methods}>
       <form onSubmit={(e) => e.preventDefault()}>
-        <div className="min-h-screen bg-slate-50 font-sans text-slate-800 selection:bg-[#2bb8e4] selection:text-white print:min-h-0 print:bg-white">
+        <div className="min-h-screen bg-slate-950 font-sans text-slate-100 selection:bg-[#2bb8e4] selection:text-white print:min-h-0 print:bg-slate-900">
         
         {/* Barra Superior */}
         <ReportHeader />
@@ -160,7 +160,7 @@ export default function ReportesPage() {
                 <button
                   type="button"
                   onClick={handleNuevoReporte}
-                  className="flex items-center gap-2 px-6 py-3 rounded-xl font-bold bg-white text-rose-500 border-2 border-rose-100 hover:bg-rose-50 transition-all shadow-sm"
+                  className="flex items-center gap-2 px-6 py-3 rounded-xl font-bold bg-slate-900 text-rose-500 border-2 border-rose-100 hover:bg-rose-50 transition-all shadow-sm"
                 >
                   Nuevo Reporte
                 </button>
@@ -168,7 +168,7 @@ export default function ReportesPage() {
                 <button
                   type="button"
                   onClick={() => saveNow()}
-                  className="flex items-center gap-2 px-6 py-3 rounded-xl font-bold bg-white text-slate-700 border-2 border-slate-200 hover:bg-slate-50 transition-all shadow-sm"
+                  className="flex items-center gap-2 px-6 py-3 rounded-xl font-bold bg-slate-900 text-slate-200 border-2 border-slate-800 hover:bg-slate-950 transition-all shadow-sm"
                 >
                   Guardar Borrador
                 </button>

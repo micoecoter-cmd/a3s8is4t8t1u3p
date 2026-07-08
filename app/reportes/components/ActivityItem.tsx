@@ -41,13 +41,13 @@ export function ActivityItem({ activityIndex, removeActivity }: ActivityItemProp
   };
 
   return (
-    <div className="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden transition-all hover:shadow-md">
-      <div className="px-6 py-4 flex justify-between items-center border-b border-slate-50 bg-slate-50/50">
-        <h3 className="font-bold text-slate-700">Actividad {activityIndex + 1}</h3>
+    <div className="bg-slate-900 rounded-2xl shadow-sm border border-slate-800 overflow-hidden transition-all hover:shadow-md">
+      <div className="px-6 py-4 flex justify-between items-center border-b border-slate-50 bg-slate-950/50">
+        <h3 className="font-bold text-slate-200">Actividad {activityIndex + 1}</h3>
         <button
           type="button"
           onClick={removeActivity}
-          className="text-slate-400 hover:text-red-500 transition-colors p-2 hover:bg-white rounded-lg"
+          className="text-slate-500 hover:text-red-500 transition-colors p-2 hover:bg-slate-900 rounded-lg"
         >
           <Trash2 size={16} />
         </button>
@@ -55,8 +55,8 @@ export function ActivityItem({ activityIndex, removeActivity }: ActivityItemProp
 
       <div className="p-6 space-y-6">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <label className="flex flex-col items-center justify-center h-32 border-2 border-dashed border-slate-200 rounded-2xl cursor-pointer bg-slate-50 hover:bg-white transition-all">
-            <ImageIcon className="w-6 h-6 text-slate-400 mb-2" />
+          <label className="flex flex-col items-center justify-center h-32 border-2 border-dashed border-slate-800 rounded-2xl cursor-pointer bg-slate-950 hover:bg-slate-900 transition-all">
+            <ImageIcon className="w-6 h-6 text-slate-500 mb-2" />
             <span className="text-xs font-bold text-slate-500 uppercase">Galería</span>
             <input type="file" multiple accept="image/*" className="hidden" onChange={handleImageUpload} />
           </label>
@@ -70,7 +70,7 @@ export function ActivityItem({ activityIndex, removeActivity }: ActivityItemProp
 
         <textarea
           {...register(`activities.${activityIndex}.description` as const)}
-          className="w-full p-4 bg-slate-50 border-2 border-slate-100 rounded-2xl text-sm focus:ring-4 outline-none transition-all min-h-20 focus:bg-white"
+          className="w-full p-4 bg-slate-950 border-2 border-slate-800 rounded-2xl text-sm focus:ring-4 outline-none transition-all min-h-20 focus:bg-slate-900"
           style={{ '--tw-ring-color': `${BRAND.teal}11` } as any}
           placeholder="Descripción general de la actividad (opcional)..."
         />
@@ -79,10 +79,10 @@ export function ActivityItem({ activityIndex, removeActivity }: ActivityItemProp
           <div className="flex flex-col gap-4 mt-4">
             <h4 className="text-sm font-bold text-slate-500 uppercase tracking-widest px-2">Fotos de la Actividad</h4>
             {imageFields.map((imgField, imgIdx) => (
-              <div key={imgField.rhfId} className="flex flex-col sm:flex-row gap-4 p-4 bg-slate-50 border border-slate-100 rounded-2xl transition-all hover:bg-white hover:shadow-sm">
+              <div key={imgField.rhfId} className="flex flex-col sm:flex-row gap-4 p-4 bg-slate-950 border border-slate-800 rounded-2xl transition-all hover:bg-slate-900 hover:shadow-sm">
                 <div className="relative group/img shrink-0">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={imgField.dataUrl} alt="preview" className="w-full sm:w-32 h-40 sm:h-32 rounded-xl object-cover border border-slate-200" />
+                  <img src={imgField.dataUrl} alt="preview" className="w-full sm:w-32 h-40 sm:h-32 rounded-xl object-cover border border-slate-800" />
                   <button
                     type="button"
                     onClick={() => removeImage(imgIdx)}
@@ -93,7 +93,7 @@ export function ActivityItem({ activityIndex, removeActivity }: ActivityItemProp
                 </div>
                 <textarea
                   {...register(`activities.${activityIndex}.images.${imgIdx}.description` as const)}
-                  className="flex-1 p-4 bg-white border border-slate-200 rounded-xl text-sm focus:ring-4 outline-none transition-all resize-none min-h-32 sm:min-h-full"
+                  className="flex-1 p-4 bg-slate-900 border border-slate-800 rounded-xl text-sm focus:ring-4 outline-none transition-all resize-none min-h-32 sm:min-h-full"
                   style={{ '--tw-ring-color': `${BRAND.teal}22`, borderColor: `${BRAND.teal}44` } as any}
                   placeholder="Añade una descripción específica para esta foto..."
                 />

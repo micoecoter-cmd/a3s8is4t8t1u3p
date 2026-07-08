@@ -82,7 +82,7 @@ export default function EditReportPage() {
 
   if (isLoading) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-slate-50">
+      <div className="min-h-screen flex items-center justify-center bg-slate-950">
         <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#2bb8e4]"></div>
       </div>
     );
@@ -91,7 +91,7 @@ export default function EditReportPage() {
   return (
     <FormProvider {...methods}>
       <form onSubmit={(e) => e.preventDefault()}>
-        <div className="min-h-screen bg-slate-50 font-sans text-slate-800 selection:bg-[#2bb8e4] selection:text-white print:min-h-0 print:bg-white">
+        <div className="min-h-screen bg-slate-950 font-sans text-slate-100 selection:bg-[#2bb8e4] selection:text-white print:min-h-0 print:bg-slate-900">
         
         {/* Barra Superior */}
         <ReportHeader />
@@ -117,7 +117,7 @@ export default function EditReportPage() {
                 <button
                   type="button"
                   onClick={() => router.push('/reportes/list')}
-                  className="flex items-center gap-2 px-6 py-3 rounded-xl font-bold bg-white text-slate-700 border-2 border-slate-200 hover:bg-slate-50 transition-all shadow-sm"
+                  className="flex items-center gap-2 px-6 py-3 rounded-xl font-bold bg-slate-900 text-slate-200 border-2 border-slate-800 hover:bg-slate-950 transition-all shadow-sm"
                 >
                   Cancelar Edición
                 </button>

@@ -28,7 +28,7 @@ export function Activities() {
 
   return (
     <section className="space-y-6">
-      <h2 className="text-lg font-bold text-slate-800 flex items-center gap-2 px-2">
+      <h2 className="text-lg font-bold text-slate-100 flex items-center gap-2 px-2">
         <span className="w-2 h-6 rounded-full" style={{ backgroundColor: BRAND.green }}></span>
         Registro de Actividades
       </h2>
@@ -44,7 +44,7 @@ export function Activities() {
       <button
         type="button"
         onClick={addActivity}
-        className="w-full py-4 border-2 border-dashed rounded-2xl font-bold flex items-center justify-center gap-2 transition-all bg-white hover:bg-slate-50"
+        className="w-full py-4 border-2 border-dashed rounded-2xl font-bold flex items-center justify-center gap-2 transition-all bg-slate-900 hover:bg-slate-950"
         style={{ borderColor: BRAND.teal, color: BRAND.teal }}
       >
         <Plus size={20} /> Añadir Nueva Actividad

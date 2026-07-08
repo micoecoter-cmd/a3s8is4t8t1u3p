@@ -48,21 +48,21 @@ export default function ReportesTable({ reportes }: ReportesTableProps) {
   };
 
   return (
-    <div className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden flex flex-col">
-      <div className="p-4 border-b border-slate-200 bg-slate-50">
+    <div className="bg-slate-900 rounded-xl shadow-sm border border-slate-800 overflow-hidden flex flex-col">
+      <div className="p-4 border-b border-slate-800 bg-slate-950">
         <input
           type="text"
           placeholder="Buscar por folio o cliente..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          className="w-full md:w-1/2 p-2 border border-slate-300 rounded focus:outline-none focus:ring-2 focus:ring-[#2bb8e4]"
+          className="w-full md:w-1/2 p-2 border border-slate-700 rounded focus:outline-none focus:ring-2 focus:ring-[#2bb8e4]"
         />
       </div>
 
       <div className="overflow-x-auto">
         <table className="w-full text-left border-collapse">
           <thead>
-            <tr className="bg-slate-100 text-slate-600 text-sm border-b border-slate-200">
+            <tr className="bg-slate-900 text-slate-300 text-sm border-b border-slate-800">
               <th className="p-4 font-bold">Folio</th>
               <th className="p-4 font-bold">Fecha</th>
               <th className="p-4 font-bold">Cliente</th>
@@ -78,10 +78,10 @@ export default function ReportesTable({ reportes }: ReportesTableProps) {
               </tr>
             ) : (
               filtered.map((rep) => (
-                <tr key={rep.id} className="border-b border-slate-100 hover:bg-slate-50 transition-colors group">
-                  <td className="p-4 font-medium text-slate-800">{rep.folio}</td>
-                  <td className="p-4 text-slate-600">{rep.fecha}</td>
-                  <td className="p-4 text-slate-600">{rep.cliente_nombre || 'Sin cliente'}</td>
+                <tr key={rep.id} className="border-b border-slate-800 hover:bg-slate-950 transition-colors group">
+                  <td className="p-4 font-medium text-slate-100">{rep.folio}</td>
+                  <td className="p-4 text-slate-300">{rep.fecha}</td>
+                  <td className="p-4 text-slate-300">{rep.cliente_nombre || 'Sin cliente'}</td>
                   <td className="p-4 text-center">
                     <div className="flex items-center justify-center gap-2 opacity-80 group-hover:opacity-100 transition-opacity">
                       <Link

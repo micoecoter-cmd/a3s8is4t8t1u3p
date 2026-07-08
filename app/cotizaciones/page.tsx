@@ -135,11 +135,11 @@ export default function CotizacionesPage() {
   return (
     <FormProvider {...methods}>
       <form onSubmit={(e) => e.preventDefault()}>
-        <main className="min-h-screen bg-slate-100 p-4 font-sans print:min-h-0 print:bg-white text-slate-800">
+        <main className="min-h-screen bg-slate-900 p-4 font-sans print:min-h-0 print:bg-slate-900 text-slate-100">
         <div className="max-w-4xl mx-auto space-y-6 print:space-y-0 print:m-0 print:max-w-none print:w-full">
           <div className="print:hidden">
             <CotizacionHeader userRole={userRole} />
-            <div className="bg-white p-6 shadow-2xl rounded-b-xl border border-gray-200">
+            <div className="bg-slate-900 p-6 shadow-2xl rounded-b-xl border border-gray-200">
               <CotizacionGeneralInfo 
                 folio={methods.watch('folio')} 
                 fecha={methods.watch('fecha')} 
@@ -168,7 +168,7 @@ export default function CotizacionesPage() {
                 <button
                   type="button"
                   onClick={() => saveNow()}
-                  className="px-6 py-3 rounded-lg font-bold text-slate-700 border border-slate-300 hover:bg-slate-50 transition-colors shadow-sm"
+                  className="px-6 py-3 rounded-lg font-bold text-slate-200 border border-slate-700 hover:bg-slate-950 transition-colors shadow-sm"
                 >
                   Guardar Borrador
                 </button>

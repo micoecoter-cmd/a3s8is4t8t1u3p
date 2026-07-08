@@ -10,7 +10,7 @@ export function CotizacionHeader({ userRole }: { userRole?: string | null }) {
           <h1 className="text-2xl font-black tracking-tight text-white flex items-center gap-2">
             Cotización <span className="text-[#8cc63f]">Nueva</span>
           </h1>
-          <p className="text-slate-400 text-sm mt-1">Generador de presupuestos</p>
+          <p className="text-slate-500 text-sm mt-1">Generador de presupuestos</p>
         </div>
       </div>
       <div className="flex items-center gap-4 relative z-10">

@@ -89,7 +89,7 @@ export default function EditCotizacionPage() {
 
   if (isLoading) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-slate-100">
+      <div className="min-h-screen flex items-center justify-center bg-slate-900">
         <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#8cc63f]"></div>
       </div>
     );
@@ -98,11 +98,11 @@ export default function EditCotizacionPage() {
   return (
     <FormProvider {...methods}>
       <form onSubmit={(e) => e.preventDefault()}>
-        <main className="min-h-screen bg-slate-100 p-4 font-sans print:p-0 print:bg-white text-slate-800">
+        <main className="min-h-screen bg-slate-900 p-4 font-sans print:p-0 print:bg-slate-900 text-slate-100">
         <div className="max-w-4xl mx-auto space-y-6 print:m-0 print:max-w-none print:w-full">
           <div className="print:hidden">
             <CotizacionHeader userRole={userRole} />
-            <div className="bg-white p-6 shadow-2xl rounded-b-xl border border-gray-200">
+            <div className="bg-slate-900 p-6 shadow-2xl rounded-b-xl border border-gray-200">
               
               <div className="bg-amber-50 border border-amber-200 text-amber-800 px-4 py-3 rounded-lg text-sm font-medium text-center mb-6">
                 Estás editando la cotización <b>{methods.watch('folio') || cotizacionId}</b>
@@ -119,7 +119,7 @@ export default function EditCotizacionPage() {
                 <button
                   type="button"
                   onClick={() => router.push('/cotizaciones/list')}
-                  className="px-6 py-3 rounded-lg font-bold text-slate-700 border border-slate-300 hover:bg-slate-50 transition-colors shadow-sm"
+                  className="px-6 py-3 rounded-lg font-bold text-slate-200 border border-slate-700 hover:bg-slate-950 transition-colors shadow-sm"
                 >
                   Cancelar Edición
                 </button>

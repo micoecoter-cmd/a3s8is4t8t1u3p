@@ -18,7 +18,7 @@ export function GlobalNav({ isAuthenticated }: { isAuthenticated: boolean }) {
   const iconClass = "mb-1";
 
   return (
-    <nav className="fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.05)] z-50 md:bottom-auto md:top-0 md:border-t-0 md:border-b md:h-16 flex items-center print:hidden">
+    <nav className="fixed bottom-0 left-0 right-0 bg-slate-900 border-t border-slate-800 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.05)] z-50 md:bottom-auto md:top-0 md:border-t-0 md:border-b md:h-16 flex items-center print:hidden">
       <div className="max-w-6xl mx-auto w-full px-4 h-16 flex items-center justify-between md:justify-end md:gap-4">
         
         {/* Retroceder (Oculto en Home) */}

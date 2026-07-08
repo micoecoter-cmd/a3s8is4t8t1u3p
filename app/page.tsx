@@ -14,9 +14,9 @@ export default async function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 font-sans text-slate-800 flex flex-col">
+    <div className="min-h-screen bg-slate-950 font-sans text-slate-100 flex flex-col">
       {/* BARRA SUPERIOR */}
-      <header className="bg-white shadow-sm sticky top-0 z-30">
+      <header className="bg-slate-900 shadow-sm sticky top-0 z-30">
         <div className="h-1.5 w-full flex">
           <div className="h-full flex-1" style={{ backgroundColor: BRAND.green }}></div>
           <div className="h-full flex-1" style={{ backgroundColor: BRAND.teal }}></div>
@@ -37,7 +37,7 @@ export default async function Home() {
       <main className="flex-grow flex items-center justify-center p-4">
         <div className="max-w-5xl w-full">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-black mb-4 text-slate-800">
+            <h2 className="text-4xl md:text-5xl font-black mb-4 text-slate-100">
               Panel de Control
             </h2>
             <p className="text-lg text-slate-500 max-w-2xl mx-auto">
@@ -54,14 +54,14 @@ export default async function Home() {
             
             {/* MÓDULO DE COTIZACIONES (Oculto para reporteros y usuarios sin rol asignado) */}
             {isAdminOrEditor && (
-              <div className="bg-white rounded-3xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100 relative overflow-hidden flex flex-col">
+              <div className="bg-slate-900 rounded-3xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-800 relative overflow-hidden flex flex-col">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#8cc63f]/10 to-transparent rounded-bl-full -z-10"></div>
                 
                 <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6" style={{ backgroundColor: `${BRAND.green}15`, color: BRAND.green }}>
                   <FileSpreadsheet size={32} strokeWidth={2.5} />
                 </div>
                 
-                <h3 className="text-2xl font-black mb-3 text-slate-800">
+                <h3 className="text-2xl font-black mb-3 text-slate-100">
                   Cotizaciones
                 </h3>
                 
@@ -73,7 +73,7 @@ export default async function Home() {
                   <Link href="/cotizaciones" className="w-full text-center py-3 rounded-xl font-bold text-white shadow-md hover:-translate-y-0.5 transition-transform" style={{ backgroundColor: BRAND.green }}>
                     Nueva Cotización
                   </Link>
-                  <Link href="/cotizaciones/list" className="w-full text-center py-3 rounded-xl font-bold text-slate-700 bg-slate-100 hover:bg-slate-200 hover:-translate-y-0.5 transition-transform">
+                  <Link href="/cotizaciones/list" className="w-full text-center py-3 rounded-xl font-bold text-slate-200 bg-slate-900 hover:bg-slate-200 hover:-translate-y-0.5 transition-transform">
                     Base de Datos
                   </Link>
                 </div>
@@ -81,14 +81,14 @@ export default async function Home() {
             )}
 
             {/* MÓDULO DE REPORTES (Visible para todos) */}
-            <div className="bg-white rounded-3xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100 relative overflow-hidden flex flex-col">
+            <div className="bg-slate-900 rounded-3xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-800 relative overflow-hidden flex flex-col">
               <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#2bb8e4]/10 to-transparent rounded-bl-full -z-10"></div>
               
               <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6" style={{ backgroundColor: `${BRAND.teal}15`, color: BRAND.teal }}>
                 <FileText size={32} strokeWidth={2.5} />
               </div>
               
-              <h3 className="text-2xl font-black mb-3 text-slate-800">
+              <h3 className="text-2xl font-black mb-3 text-slate-100">
                 Reportes de Trabajo
               </h3>
               
@@ -100,7 +100,7 @@ export default async function Home() {
                 <Link href="/reportes" className="w-full text-center py-3 rounded-xl font-bold text-white shadow-md hover:-translate-y-0.5 transition-transform" style={{ backgroundColor: BRAND.teal }}>
                   Nuevo Reporte
                 </Link>
-                <Link href="/reportes/list" className="w-full text-center py-3 rounded-xl font-bold text-slate-700 bg-slate-100 hover:bg-slate-200 hover:-translate-y-0.5 transition-transform">
+                <Link href="/reportes/list" className="w-full text-center py-3 rounded-xl font-bold text-slate-200 bg-slate-900 hover:bg-slate-200 hover:-translate-y-0.5 transition-transform">
                   Base de Datos
                 </Link>
               </div>
@@ -111,7 +111,7 @@ export default async function Home() {
       </main>
 
       {/* FOOTER SENCILLO */}
-      <footer className="py-6 text-center text-sm font-medium text-slate-400">
+      <footer className="py-6 text-center text-sm font-medium text-slate-500">
         &copy; {new Date().getFullYear()} Ecotermic Solar S.A. de C.V.
       </footer>
     </div>

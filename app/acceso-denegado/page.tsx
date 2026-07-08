@@ -2,8 +2,8 @@ import Link from 'next/link';
 
 export default function AccesoDenegadoPage() {
   return (
-    <div className="min-h-screen bg-slate-100 flex items-center justify-center font-sans p-4">
-      <div className="max-w-md w-full bg-white rounded-2xl shadow-xl p-10 text-center">
+    <div className="min-h-screen bg-slate-900 flex items-center justify-center font-sans p-4">
+      <div className="max-w-md w-full bg-slate-900 rounded-2xl shadow-xl p-10 text-center">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/asisttup-logo.svg" alt="Asisttup" className="h-16 w-auto object-contain mx-auto mb-6" />
 
@@ -13,7 +13,7 @@ export default function AccesoDenegadoPage() {
           </svg>
         </div>
 
-        <h1 className="text-2xl font-black text-slate-800 mb-2">Acceso Restringido</h1>
+        <h1 className="text-2xl font-black text-slate-100 mb-2">Acceso Restringido</h1>
         <p className="text-slate-500 mb-8 max-w-sm mx-auto">
           Lo sentimos, tu cuenta no tiene los permisos necesarios para acceder a este módulo. Si crees que esto es un error, contacta a tu administrador.
         </p>

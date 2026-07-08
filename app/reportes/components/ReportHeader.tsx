@@ -12,7 +12,7 @@ export function ReportHeader() {
           <h1 className="text-2xl font-black tracking-tight text-white flex items-center gap-2">
             Reporte <span className="text-[#2bb8e4]">Técnico</span>
           </h1>
-          <p className="text-slate-400 text-sm mt-1">Documentación y Evidencia</p>
+          <p className="text-slate-500 text-sm mt-1">Documentación y Evidencia</p>
         </div>
       </div>
     </header>

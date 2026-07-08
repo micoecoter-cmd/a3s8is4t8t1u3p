@@ -22,7 +22,7 @@ export default async function RootLayout({
   return (
     <html lang="es-MX">
       {/* Añadimos padding inferior en móviles y superior en escritorio para que el contenido no quede debajo de la barra */}
-      <body className="pb-16 md:pb-0 md:pt-16">
+      <body className="pb-16 md:pb-0 md:pt-16 bg-slate-950 text-slate-100">
         <GlobalNav isAuthenticated={isAuthenticated} />
         {children}
       </body>

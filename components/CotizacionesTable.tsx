@@ -33,7 +33,7 @@ export default function CotizacionesTable({ cotizaciones }: { cotizaciones: any[
   };
 
   return (
-    <div className="bg-white shadow-xl rounded-xl border border-slate-100 overflow-hidden">
+    <div className="bg-slate-900 shadow-xl rounded-xl border border-slate-800 overflow-hidden">
       <div className="overflow-x-auto">
         <table className="w-full text-left border-collapse">
           <thead>
@@ -55,11 +55,11 @@ export default function CotizacionesTable({ cotizaciones }: { cotizaciones: any[
               </tr>
             ) : (
               cotizaciones.map((cot: any) => (
-                <tr key={cot.id} className="hover:bg-slate-50 transition-colors group">
-                  <td className="p-4 font-mono font-medium text-slate-700">{cot.folio}</td>
+                <tr key={cot.id} className="hover:bg-slate-950 transition-colors group">
+                  <td className="p-4 font-mono font-medium text-slate-200">{cot.folio}</td>
                   <td className="p-4">{cot.fecha}</td>
-                  <td className="p-4 font-semibold text-slate-800">
-                    {cot.cliente_nombre || <span className="text-slate-400 italic">Sin Cliente</span>}
+                  <td className="p-4 font-semibold text-slate-100">
+                    {cot.cliente_nombre || <span className="text-slate-500 italic">Sin Cliente</span>}
                   </td>
                   <td className="p-4 font-bold text-green-700">
                     {new Intl.NumberFormat('es-MX', { style: 'currency', currency: 'MXN' }).format(cot.total)}
@@ -69,13 +69,13 @@ export default function CotizacionesTable({ cotizaciones }: { cotizaciones: any[
                       <summary className="text-blue-600 hover:text-blue-800 font-semibold text-xs outline-none">
                         Ver Detalle ({cot.partidas?.length || 0})
                       </summary>
-                      <div className="mt-2 text-left bg-slate-100 p-3 rounded text-xs border border-slate-200 absolute right-20 w-80 shadow-2xl z-10">
-                        <p className="font-bold border-b border-slate-300 pb-1 mb-2">Artículos Cotizados:</p>
+                      <div className="mt-2 text-left bg-slate-900 p-3 rounded text-xs border border-slate-800 absolute right-20 w-80 shadow-2xl z-10">
+                        <p className="font-bold border-b border-slate-700 pb-1 mb-2">Artículos Cotizados:</p>
                         <ul className="space-y-2">
                           {cot.partidas?.map((p: any, i: number) => (
-                            <li key={i} className="flex justify-between border-b border-slate-200 pb-1">
+                            <li key={i} className="flex justify-between border-b border-slate-800 pb-1">
                               <span className="truncate w-40" title={p.desc}>{p.cant}x {p.desc || 'Sin descripción'}</span>
-                              <span className="font-semibold text-slate-700">${(p.unit * p.cant).toFixed(2)}</span>
+                              <span className="font-semibold text-slate-200">${(p.unit * p.cant).toFixed(2)}</span>
                             </li>
                           ))}
                         </ul>

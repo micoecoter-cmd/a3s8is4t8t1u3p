@@ -9,8 +9,8 @@ export default async function LoginPage({
   const error = resolvedParams?.error as string | undefined;
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-slate-50 p-4 selection:bg-[#2bb8e4] selection:text-white">
-      <div className="bg-white p-8 rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100 max-w-md w-full">
+    <div className="min-h-screen flex items-center justify-center bg-slate-950 p-4 selection:bg-[#2bb8e4] selection:text-white">
+      <div className="bg-slate-900 p-8 rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-800 max-w-md w-full">
         <div className="flex justify-center mb-6">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/asisttup-logo.svg" alt="Asisttup Logo" className="h-16 w-auto object-contain" />
@@ -19,7 +19,7 @@ export default async function LoginPage({
 
         <form className="space-y-5">
           <div>
-            <label className="block text-xs font-bold text-slate-400 uppercase tracking-widest mb-2" htmlFor="email">
+            <label className="block text-xs font-bold text-slate-500 uppercase tracking-widest mb-2" htmlFor="email">
               Correo Electrónico
             </label>
             <input
@@ -27,13 +27,13 @@ export default async function LoginPage({
               name="email"
               type="email"
               required
-              className="w-full p-3 bg-slate-50 border-2 border-slate-100 rounded-xl text-sm focus:ring-4 outline-none transition-all focus:bg-white text-slate-700"
+              className="w-full p-3 bg-slate-950 border-2 border-slate-800 rounded-xl text-sm focus:ring-4 outline-none transition-all focus:bg-slate-900 text-slate-200"
               style={{ '--tw-ring-color': '#2bb8e422' } as any}
               placeholder="usuario@asisttup.com"
             />
           </div>
           <div>
-            <label className="block text-xs font-bold text-slate-400 uppercase tracking-widest mb-2" htmlFor="password">
+            <label className="block text-xs font-bold text-slate-500 uppercase tracking-widest mb-2" htmlFor="password">
               Contraseña
             </label>
             <input
@@ -41,7 +41,7 @@ export default async function LoginPage({
               name="password"
               type="password"
               required
-              className="w-full p-3 bg-slate-50 border-2 border-slate-100 rounded-xl text-sm focus:ring-4 outline-none transition-all focus:bg-white text-slate-700"
+              className="w-full p-3 bg-slate-950 border-2 border-slate-800 rounded-xl text-sm focus:ring-4 outline-none transition-all focus:bg-slate-900 text-slate-200"
               style={{ '--tw-ring-color': '#2bb8e422' } as any}
               placeholder="••••••••"
             />

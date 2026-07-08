@@ -10,16 +10,16 @@ export function Personnel() {
   const { register } = useFormContext<ReportFormData>();
 
   return (
-    <section className="bg-white rounded-2xl shadow-sm border border-slate-100 p-8">
+    <section className="bg-slate-900 rounded-2xl shadow-sm border border-slate-800 p-8">
       <div className="flex items-center gap-2 mb-6">
         <Users size={20} style={{ color: BRAND.blue }} />
-        <h2 className="text-lg font-bold text-slate-800">Personal Responsable</h2>
+        <h2 className="text-lg font-bold text-slate-100">Personal Responsable</h2>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {(['elaboro', 'superviso', 'tecnico'] as const).map((field) => (
           <div key={field} className="space-y-3">
-            <label className="block text-xs font-bold text-slate-400 uppercase tracking-widest">
+            <label className="block text-xs font-bold text-slate-500 uppercase tracking-widest">
               {{ elaboro: 'Elaboró', superviso: 'Supervisó', tecnico: 'Técnico' }[field]}
             </label>
 
@@ -27,7 +27,7 @@ export function Personnel() {
             <div className="relative">
               <select
                 {...register(`personnel.${field}`)}
-                className="w-full p-3 pr-10 appearance-none bg-slate-50 border-2 border-slate-50 rounded-xl text-sm focus:ring-4 outline-none transition-all focus:bg-white text-slate-700"
+                className="w-full p-3 pr-10 appearance-none bg-slate-950 border-2 border-slate-50 rounded-xl text-sm focus:ring-4 outline-none transition-all focus:bg-slate-900 text-slate-200"
               >
                 <option value="">Selecciona un responsable...</option>
                 {DEFAULT_COLLABORATORS.map(collab => (
@@ -36,7 +36,7 @@ export function Personnel() {
                   </option>
                 ))}
               </select>
-              <ChevronDown size={16} className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none" />
+              <ChevronDown size={16} className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-500 pointer-events-none" />
             </div>
           </div>
         ))}
