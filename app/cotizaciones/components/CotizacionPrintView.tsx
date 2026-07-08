@@ -17,7 +17,7 @@ export function CotizacionPrintView() {
   const total = subtotal + iva;
 
   return (
-    <div className="hidden print:block w-full print-content bg-white print:p-0">
+    <div className="hidden print:block w-full print-content bg-white print:p-0 text-black">
       <style type="text/css" media="print">
         {`
           @page {
@@ -91,7 +91,7 @@ export function CotizacionPrintView() {
             <th className="p-2 w-32 text-right border border-slate-800">Importe</th>
           </tr>
         </thead>
-        <tbody className="text-sm">
+        <tbody className="text-sm text-black print:text-black">
           {(partidas || []).map((item, index) => {
             const cant = Number(item.cant) || 0;
             const unit = Number(item.unit) || 0;
