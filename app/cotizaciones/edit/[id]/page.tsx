@@ -119,7 +119,7 @@ export default function EditCotizacionPage() {
                 <button
                   type="button"
                   onClick={() => router.push('/cotizaciones/list')}
-                  className="px-6 py-3 rounded-lg font-bold text-slate-200 border border-slate-700 hover:bg-slate-950 transition-colors shadow-sm"
+                  className="px-6 py-3 rounded-lg font-bold bg-slate-700 text-white hover:bg-slate-600 transition-colors shadow-sm"
                 >
                   Cancelar Edición
                 </button>

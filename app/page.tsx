@@ -16,7 +16,7 @@ export default async function Home() {
   return (
     <div className="min-h-screen bg-slate-950 font-sans text-slate-100 flex flex-col">
       {/* BARRA SUPERIOR */}
-      <header className="bg-slate-900 shadow-sm sticky top-0 z-30">
+      <header className="bg-slate-100 shadow-sm sticky top-0 z-30">
         <div className="h-1.5 w-full flex">
           <div className="h-full flex-1" style={{ backgroundColor: BRAND.green }}></div>
           <div className="h-full flex-1" style={{ backgroundColor: BRAND.teal }}></div>
@@ -27,7 +27,7 @@ export default async function Home() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/asisttup-logo.svg" alt="Ecotermic Logo" className="h-10 w-auto object-contain" />
           </div>
-          <div className="text-sm font-bold text-slate-500 uppercase tracking-widest hidden md:block">
+          <div className="text-sm font-bold text-slate-800 uppercase tracking-widest hidden md:block">
             Rol: <span className="text-[#2bb8e4]">{role}</span>
           </div>
         </div>
@@ -73,7 +73,7 @@ export default async function Home() {
                   <Link href="/cotizaciones" className="w-full text-center py-3 rounded-xl font-bold text-white shadow-md hover:-translate-y-0.5 transition-transform" style={{ backgroundColor: BRAND.green }}>
                     Nueva Cotización
                   </Link>
-                  <Link href="/cotizaciones/list" className="w-full text-center py-3 rounded-xl font-bold text-slate-200 bg-slate-900 hover:bg-slate-200 hover:-translate-y-0.5 transition-transform">
+                  <Link href="/cotizaciones/list" className="w-full text-center py-3 rounded-xl font-bold text-slate-200 bg-slate-900 hover:bg-slate-200 hover:text-slate-900 hover:-translate-y-0.5 transition-transform">
                     Base de Datos
                   </Link>
                 </div>
@@ -100,7 +100,7 @@ export default async function Home() {
                 <Link href="/reportes" className="w-full text-center py-3 rounded-xl font-bold text-white shadow-md hover:-translate-y-0.5 transition-transform" style={{ backgroundColor: BRAND.teal }}>
                   Nuevo Reporte
                 </Link>
-                <Link href="/reportes/list" className="w-full text-center py-3 rounded-xl font-bold text-slate-200 bg-slate-900 hover:bg-slate-200 hover:-translate-y-0.5 transition-transform">
+                <Link href="/reportes/list" className="w-full text-center py-3 rounded-xl font-bold text-slate-200 bg-slate-900 hover:bg-slate-200 hover:text-slate-900 hover:-translate-y-0.5 transition-transform">
                   Base de Datos
                 </Link>
               </div>

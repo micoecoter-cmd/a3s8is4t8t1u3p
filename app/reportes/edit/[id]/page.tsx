@@ -117,7 +117,7 @@ export default function EditReportPage() {
                 <button
                   type="button"
                   onClick={() => router.push('/reportes/list')}
-                  className="flex items-center gap-2 px-6 py-3 rounded-xl font-bold bg-slate-900 text-slate-200 border-2 border-slate-800 hover:bg-slate-950 transition-all shadow-sm"
+                  className="flex items-center gap-2 px-6 py-3 rounded-xl font-bold bg-slate-700 text-white hover:bg-slate-600 transition-all shadow-sm"
                 >
                   Cancelar Edición
                 </button>

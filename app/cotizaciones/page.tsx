@@ -160,17 +160,15 @@ export default function CotizacionesPage() {
                 <button
                   type="button"
                   onClick={handleNuevaCotizacion}
-                  className="px-6 py-3 rounded-lg font-bold text-rose-500 border border-rose-200 hover:bg-rose-50 transition-colors shadow-sm"
-                >
-                  Nueva Cotización
+                  className="px-6 py-3 rounded-lg font-bold bg-[#004d99] text-white hover:bg-blue-800 transition-colors shadow-sm"
+                >  Nueva Cotización
                 </button>
                 
                 <button
                   type="button"
                   onClick={() => saveNow()}
-                  className="px-6 py-3 rounded-lg font-bold text-slate-200 border border-slate-700 hover:bg-slate-950 transition-colors shadow-sm"
-                >
-                  Guardar Borrador
+                  className="px-6 py-3 rounded-lg font-bold bg-[#2bb8e4] text-white hover:bg-cyan-600 transition-colors shadow-sm"
+                >  Guardar Borrador
                 </button>
 
                 <button

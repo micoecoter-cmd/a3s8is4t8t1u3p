@@ -160,7 +160,7 @@ export default function ReportesPage() {
                 <button
                   type="button"
                   onClick={handleNuevoReporte}
-                  className="flex items-center gap-2 px-6 py-3 rounded-xl font-bold bg-slate-900 text-rose-500 border-2 border-rose-100 hover:bg-rose-50 transition-all shadow-sm"
+                  className="flex items-center gap-2 px-6 py-3 rounded-xl font-bold bg-[#004d99] text-white hover:bg-blue-800 transition-all shadow-sm"
                 >
                   Nuevo Reporte
                 </button>
@@ -168,7 +168,7 @@ export default function ReportesPage() {
                 <button
                   type="button"
                   onClick={() => saveNow()}
-                  className="flex items-center gap-2 px-6 py-3 rounded-xl font-bold bg-slate-900 text-slate-200 border-2 border-slate-800 hover:bg-slate-950 transition-all shadow-sm"
+                  className="flex items-center gap-2 px-6 py-3 rounded-xl font-bold bg-[#2bb8e4] text-white hover:bg-cyan-600 transition-all shadow-sm"
                 >
                   Guardar Borrador
                 </button>
